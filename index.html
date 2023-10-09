@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+<div class="subcontainer1">
+    <input type="text" class="expression" id="expression"  readonly>
+   <input type="text" class="results" id="results" readonly>
+
+</div>
+<div class="row">
+
+        <button class="buttons " onclick="makeExp('7')">7</button>
+        <button class="buttons " onclick="makeExp('8')">8</button>
+        <button class="buttons " onclick="makeExp('9')">9</button>
+        <button class="buttons " id="bordercolor" onclick="calPercentage()">%</button>
+        <button class="buttons "  id="bordercolor" onclick="makeExp('+')">+</button>
+</div>
+
+<div class="row">
+
+    <button class="buttons " onclick="makeExp('4')">4</button>
+    <button class="buttons " onclick="makeExp('5')">5</button>
+    <button class="buttons " onclick="makeExp('6')">6</button>
+    <button class="buttons " id="bordercolor" onclick="sqroot()">√</button>
+    <button class="buttons "  id="bordercolor" onclick="makeExp('-')">-</button>
+</div>
+
+<div class="row">
+
+    <button class="buttons " onclick="makeExp('1')">1</button>
+    <button class="buttons " onclick="makeExp('2')">2</button>
+    <button class="buttons " onclick="makeExp('3')">3</button>
+    <button class="buttons "id="bordercolor" onclick="makeExp('.')">.</button>
+    <button class="buttons "  id="bordercolor" onclick="makeExp('/')">÷</button>
+</div>
+
+<div class="row">
+
+    <button class="buttons "  id="AC_green" onclick="clearDisplay()">AC</button>
+    <button class="buttons " onclick="makeExp('0')">0</button>
+    <button class="buttons " id="answer" onclick="calculate()">=</button>
+    <button class="buttons " id="slice" onclick="slicenumber()"><i class="fas fa-backspace"></i></button>
+    <button class="buttons "  id="bordercolor " onclick="makeExp('*')">x</button>
+</div>
+
+      
+    </div>
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>
