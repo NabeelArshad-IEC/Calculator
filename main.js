@@ -5,7 +5,7 @@ slice= document.getElementById('slice');
 
 function makeExp(value) {
   
-   //console.log(expression{expression.length -1});
+
 const maxlength=8;
 const currExp=expression.value;
 if(currExp.length < maxlength) 
