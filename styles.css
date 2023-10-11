@@ -1,38 +1,43 @@
-:root {
-    --theme-color:#788A7C;
 
-    --blue:rgb(5, 155, 255);
-    --red:rgb(255, 5, 5);
-    }
-    .container{
-        width: 35%;
-      
-        height: auto;
-        background-color: rgb(201, 246, 246);
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+body {
+    background-color:#141A1E;
+    background-image: url('bg.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+   .container{
+        width: 575px;
+height: 715.755px;
+flex-shrink: 0;
+border-radius: 14.974px;
+background: #1E2B33;
+box-shadow: 0px 11.97917px 11.97917px 0px rgba(0, 0, 0, 0.25);
     }
     .subcontainer1 {
-        width: 100%;
-       
-        background-color: rgb(255, 255, 255);
-        border-radius: 4px;
-        margin-top: 10px;
-        align-items: center;
-       align-self: center;
-        height: 160px
+        margin-top: 20px;
+        width: 542.057px;
+        height: 150.719px;
+        flex-shrink: 0;
+        border-radius: 2.995px;
+        background: #2D3B43;
+        box-shadow: 0px 0px 17.96875px 5.98958px #354047 inset;
+        display: inline-flex;
+flex-direction: column;
 
     }
     .expression{
         border: none;
-        color:#3b3939;
+        background: #2D3B43;
+        color:#ffffff;
         margin-bottom: 20px;
-        margin-top: 10px;
+        margin-top: 20px;
             width: 100%;
-        font-family: "Times New Roman", Times, serif;
-        font-size: 35px;
+            color: #FBFBFB;
+            font-family: Inter;
+            font-size: 30.6px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
        padding-left: 20px;
 
     }
@@ -40,10 +45,13 @@
         text-align: end;
         width: 100%;
         border: none;
-        color:#111111;
-        font-size: 45px;
-        font-weight:550;
-        font-family: "Times New Roman", Times, serif;
+        background: #2D3B43;
+        color:#ffffff;
+        font-family: Inter;
+            font-size: 45.6px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         padding-right: 20px;
        
     }
@@ -51,46 +59,101 @@
 .row{
     display: flex;
     flex-direction: row;
-  justify-content: center;
-  flex-shrink: 2;
+  justify-content: space-between;
+  
 }
 .buttons{
-padding:15px ;
-    margin: 20px ;
+    width: 119.792px;
+    height: 83.854px;
+    flex-shrink: 0;
+    border-radius: 5.99px;
+    background: #1E2B33;
+    color: #ffffff;
     border: none;
-    border-radius: 4px;
- background-color: var(--blue);
- color: white;
- font-size: 24px;
- text-align: center;
- font-family: "Times New Roman", Times, serif;
- width: 80px;
- flex-shrink: 2;
-
+font-family: Inter;
+font-size: 20.964px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin:10px;
 }
-
-
-#bordercolor {
-    background-color: white;
-  color: var(--blue);
-    border-style: solid;
+.buttons:focus {
+    outline: none;
+  
+    
 }
+.buttons:hover {
+    background-color:#AA851B;;
+  }
+
+#operator{
+    width: 119.792px;
+    height: 83.854px;
+    flex-shrink: 0;
+    border-radius: 5.99px;
+    background: #1E2B33;
+    color: #AA851B;
+    border: none;
+font-family: Inter;
+font-size: 20.964px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+#operator:hover {
+    background-color:#AA851B;
+    color: #ffffff;
+
+  }
+
 #slice {
-    background-color: white;
-  color: var(--red);
-    border-style: solid;
+    width: 119.792px;
+    height: 83.854px;
+    flex-shrink: 0;
+    border-radius: 5.99px;
+    background: #1E2B33;
+    color: #AA851B;
+    border: none;
+font-family: Inter;
+font-size: 20.964px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
 
 }
+
+#slice:hover {
+    background-color:#AA851B;;
+    color: white;
+  }
 #AC_green {
-    background-color: white;
-  color: rgb(0, 185, 3);
-    border-style: solid;
+    width: 119.792px;
+    height: 83.854px;
+    flex-shrink: 0;
+    border-radius: 5.99px;
+    background: #1E2B33;
+    color: #AA851B;
+    border: none;
+font-family: Inter;
+font-size: 20.964px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
 }
-
+#AC_green:hover {
+    background-color:#AA851B;;
+    color: white;
+  }
 #answer {
-    background-color: white;
-  color: var(--blue);
-    border-style: solid;
-    border-radius: 10px;
-
+    width: 119.792px;
+    height: 83.854px;
+    flex-shrink: 0;
+    border-radius: 5.99px;
+    background: #AA851B;
+    color: #FFF;
+font-family: Inter;
+font-size: 32.943px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
 }
